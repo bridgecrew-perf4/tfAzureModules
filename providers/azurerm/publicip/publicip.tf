@@ -1,0 +1,20 @@
+#================================================================================
+#
+# PUBLICIP.TF
+
+resource "azurerm_public_ip" "example" {
+  name                = var.publicip_name
+  resource_group_name = var.rg_name
+  location            = var.rg_location
+  allocation_method   = var.allocation_method
+}
+
+output "publicip_id" {
+    value = azurerm_public_ip.example.id
+}
+output "publicip_ip_address" {
+    value = azurerm_public_ip.example.ip_address
+}
+output "publicip_name" {
+    value = azurerm_public_ip.example.name
+}
