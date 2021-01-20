@@ -51,10 +51,8 @@ variable "subnet_id" {
     default = "subnet_id"
 }
 variable "address_space" {
-    type = string
     default = "address_space"
 }
 variable "vpn_client_protocols" {
-    type = string
     default = "vpn_client_protocols"
 }
