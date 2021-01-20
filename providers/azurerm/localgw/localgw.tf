@@ -3,6 +3,7 @@
 # LOCALGW.TF
 
 resource "azurerm_local_network_gateway" "prem" {
+  count = var.to_provision == true ? 1 : 0
   name                = var.localgw_name
   resource_group_name = var.rg_name
   location            = var.rg_location

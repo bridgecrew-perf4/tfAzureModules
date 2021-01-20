@@ -3,6 +3,7 @@
 # VNETGW.TF
 
 resource "azurerm_virtual_network_gateway" "example" {
+  count = var.to_provision == true ? 1 : 0
   name                = var.vnetgw_name
   location            = var.rg_location
   resource_group_name = var.rg_name

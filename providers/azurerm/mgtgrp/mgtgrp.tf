@@ -3,6 +3,7 @@
 # MGTGRP.TF
 
 resource "azurerm_management_group" "example_parent" {
+	count = var.to_provision == true ? 1 : 0
 	display_name = var.mgtgrp_display_name
 	name = var.mgtgrp_name
 	parent_management_group_id = var.mgtgrp_parent_id

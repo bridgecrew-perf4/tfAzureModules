@@ -3,6 +3,7 @@
 # CONNECTION.TF
 
 resource "azurerm_virtual_network_gateway_connection" "example" {
+  count = var.to_provision == true ? 1 : 0
   name                = var.vpncon_name
   resource_group_name = var.rg_name
   location            = var.rg_location

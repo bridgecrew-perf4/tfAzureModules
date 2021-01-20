@@ -3,6 +3,7 @@
 # PUBLICIP.TF
 
 resource "azurerm_public_ip" "example" {
+  count = var.to_provision == true ? 1 : 0
   name                = var.publicip_name
   resource_group_name = var.rg_name
   location            = var.rg_location
