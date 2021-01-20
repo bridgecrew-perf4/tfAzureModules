@@ -4,8 +4,8 @@
 
 resource "azurerm_virtual_network_gateway_connection" "example" {
   name                = var.vpncon_name
-  resource_group_name = var.resource_group
-  location            = var.location
+  resource_group_name = var.rg_name
+  location            = var.rg_location
   type                       = "IPsec"
   virtual_network_gateway_id = var.vpncon_vnetgw_id
   local_network_gateway_id   = var.vpncon_localgw_id

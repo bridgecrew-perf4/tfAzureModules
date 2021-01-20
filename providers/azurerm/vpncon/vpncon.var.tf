@@ -2,13 +2,13 @@
 #
 # VPNCON.VAR.TF
 
-variable "location" {
+variable "rg_location" {
     type = string
-	default = "location"
+	default = "rg_location"
 }
-variable "resource_group" {
+variable "rg_name" {
     type = string
-	default = "resource_group"
+	default = "rg_name"
 }
 variable "vpncon_name" {
     type = string
