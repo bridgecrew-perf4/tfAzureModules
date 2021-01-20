@@ -10,11 +10,11 @@ resource "azurerm_management_group" "example_parent" {
 }
 
 output "mgtgrp_display_name" {
-	value = azurerm_management_group.example_parent.display_name
+	value = azurerm_management_group.example_parent[count.index].display_name
 }
 output "mgtgrp_name" {
-	value = azurerm_management_group.example_parent.name
+	value = azurerm_management_group.example_parent[count.index].name
 }
 output "mgtgrp_parent_id" {
-	value = azurerm_management_group.example_parent.parent_management_group_id
+	value = azurerm_management_group.example_parent[count.index].parent_management_group_id
 }
