@@ -15,8 +15,10 @@ variable "localgw_name" {
 	default = "localgw_name"
 }
 variable "gateway_address" {
+	type = list
     default = [ "10.255.255.254" ]
 }
 variable "address_space" {
-    default = "address_space"
+    type = list
+    default = [ "10.0.0.0/16" ]
 }
