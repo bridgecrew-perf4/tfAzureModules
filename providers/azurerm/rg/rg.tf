@@ -4,8 +4,8 @@
 
 resource "azurerm_resource_group" "example" {
 	count = var.to_provision == true ? 1 : 0
-	name = var.rg_name[count.index]
-	location = var.rg_location[count.index]
+	name = var.rg_name
+	location = var.rg_location
 }
 
 output "rg_name" {
