@@ -52,9 +52,13 @@ variable "subnet_id" {
 }
 variable "address_space" {
     type = list
-    default = "address_space"
+    default = [
+        "10.0.1.0/24"
+    ]
 }
 variable "vpn_client_protocols" {
     type = list
-    default = "vpn_client_protocols"
+    default = [
+        "vpn_client_protocols"
+    ]
 }
