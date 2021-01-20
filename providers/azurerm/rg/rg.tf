@@ -9,8 +9,8 @@ resource "azurerm_resource_group" "example" {
 }
 
 output "rg_name" {
-	value = azurerm_resource_group.example[count.index].name
+	value = azurerm_resource_group.example[0].name
 }
 output "rg_location" {
-	value = azurerm_resource_group.example[count.index].location
+	value = azurerm_resource_group.example[0].location
 }
