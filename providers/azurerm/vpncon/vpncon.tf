@@ -14,8 +14,8 @@ resource "azurerm_virtual_network_gateway_connection" "example" {
 }
 
 output "vpncon_id" {
-  value = azurerm_virtual_network_gateway_connection.example.id
+  value = azurerm_virtual_network_gateway_connection.example[0].id
 }
 output "vpncon_name" {
-  value = azurerm_virtual_network_gateway_connection.example.name
+  value = azurerm_virtual_network_gateway_connection.example[0].name
 }

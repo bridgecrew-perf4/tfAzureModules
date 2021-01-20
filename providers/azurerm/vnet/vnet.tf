@@ -12,8 +12,8 @@ resource "azurerm_virtual_network" "example" {
 }
 
 output "vnet_id" {
-  value = azurerm_virtual_network.example.id
+  value = azurerm_virtual_network.example[0].id
 }
 output "vnet_name" {
-  value = azurerm_virtual_network.example.name
+  value = azurerm_virtual_network.example[0].name
 }

@@ -12,8 +12,8 @@ resource "azurerm_local_network_gateway" "prem" {
 }
 
 output "localgw_id" {
-  value = azurerm_local_network_gateway.prem.id
+  value = azurerm_local_network_gateway.prem[0].id
 }
 output "localgw_name" {
-  value = azurerm_local_network_gateway.prem.name
+  value = azurerm_local_network_gateway.prem[0].name
 }

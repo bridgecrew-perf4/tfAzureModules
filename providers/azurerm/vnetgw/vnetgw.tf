@@ -29,8 +29,8 @@ resource "azurerm_virtual_network_gateway" "example" {
 }
 
 output "vnetgw_id" {
-    value = azurerm_virtual_network_gateway.example.id
+    value = azurerm_virtual_network_gateway.example[0].id
 }
 output "vnetgw_name" {
-    value = azurerm_virtual_network_gateway.example.name
+    value = azurerm_virtual_network_gateway.example[0].name
 }

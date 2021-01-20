@@ -11,11 +11,11 @@ resource "azurerm_public_ip" "example" {
 }
 
 output "publicip_id" {
-    value = azurerm_public_ip.example.id
+    value = azurerm_public_ip.example[0].id
 }
 output "publicip_ip_address" {
-    value = azurerm_public_ip.example.ip_address
+    value = azurerm_public_ip.example[0].ip_address
 }
 output "publicip_name" {
-    value = azurerm_public_ip.example.name
+    value = azurerm_public_ip.example[0].name
 }

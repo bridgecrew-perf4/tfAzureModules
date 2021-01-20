@@ -11,8 +11,8 @@ resource "azurerm_subnet" "example" {
 }
 
 output "subnet_id" {
-  value = azurerm_subnet.example.id
+  value = azurerm_subnet.example[0].id
 }
 output "subnet_name" {
-  value = azurerm_subnet.example.name
+  value = azurerm_subnet.example[0].name
 }
