@@ -2,10 +2,10 @@
 #
 # MGTGRP.VAR.TF
 
-variable "to_provision" {
+/*variable "to_provision" {
     type = bool
     default = true
-}
+}*/
 variable "mgtgrp_name" {
     type = string
     default = "mgtgrp_name"

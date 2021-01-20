@@ -3,7 +3,7 @@
 # LOCALGW.TF
 
 resource "azurerm_local_network_gateway" "prem" {
-  count = var.to_provision == true ? 1 : 0
+  #count = var.to_provision == true ? 1 : 0
   name                = var.localgw_name
   resource_group_name = var.rg_name
   location            = var.rg_location
@@ -12,8 +12,8 @@ resource "azurerm_local_network_gateway" "prem" {
 }
 
 output "localgw_id" {
-  value = azurerm_local_network_gateway.prem[0].id
+  value = azurerm_local_network_gateway.prem.id
 }
 output "localgw_name" {
-  value = azurerm_local_network_gateway.prem[0].name
+  value = azurerm_local_network_gateway.prem.name
 }

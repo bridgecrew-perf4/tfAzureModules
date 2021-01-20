@@ -3,7 +3,7 @@
 # VNETGW.TF
 
 resource "azurerm_virtual_network_gateway" "example" {
-  count = var.to_provision == true ? 1 : 0
+  #count = var.to_provision == true ? 1 : 0
   name                = var.vnetgw_name
   location            = var.rg_location
   resource_group_name = var.rg_name
@@ -29,8 +29,8 @@ resource "azurerm_virtual_network_gateway" "example" {
 }
 
 output "vnetgw_id" {
-    value = azurerm_virtual_network_gateway.example[1].id
+    value = azurerm_virtual_network_gateway.example.id
 }
 output "vnetgw_name" {
-    value = azurerm_virtual_network_gateway.example[1].name
+    value = azurerm_virtual_network_gateway.example.name
 }

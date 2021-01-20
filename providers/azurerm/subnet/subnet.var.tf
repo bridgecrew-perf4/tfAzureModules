@@ -2,10 +2,10 @@
 #
 # SUBNET.VAR.TF
 
-variable "to_provision" {
+/*variable "to_provision" {
     type = bool
     default = true
-}
+}*/
 variable "rg_name" {
 	type = string
 	default = "rg_name"

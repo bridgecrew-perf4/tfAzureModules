@@ -3,7 +3,7 @@
 # CONNECTION.TF
 
 resource "azurerm_virtual_network_gateway_connection" "example" {
-  count = var.to_provision == true ? 1 : 0
+  #count = var.to_provision == true ? 1 : 0
   name                = var.vpncon_name
   resource_group_name = var.rg_name
   location            = var.rg_location
@@ -14,8 +14,8 @@ resource "azurerm_virtual_network_gateway_connection" "example" {
 }
 
 output "vpncon_id" {
-  value = azurerm_virtual_network_gateway_connection.example[0].id
+  value = azurerm_virtual_network_gateway_connection.example.id
 }
 output "vpncon_name" {
-  value = azurerm_virtual_network_gateway_connection.example[0].name
+  value = azurerm_virtual_network_gateway_connection.example.name
 }
