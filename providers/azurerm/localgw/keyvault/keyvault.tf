@@ -37,6 +37,9 @@ resource "azurerm_key_vault" "example" {
 output "keyvault_id" {
     value = azurerm_key_vault.example.id
 }
+output "keyvault_name" {
+    value = azurerm_key_vault.example.name
+}
 output "keyvault_vault_uri" {
     value = azurerm_key_vault.example.vault_uri
 }
