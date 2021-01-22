@@ -38,7 +38,7 @@ variable "sku_name" {
 	type = string
     default = "standard"
 }
-/*variable "key_permissions" {
+variable "key_permissions" {
     type = list
 	default = [
         "key_permissions"
@@ -55,4 +55,10 @@ variable "storage_permissions" {
 	default = [
         "storage_permissions"
     ]
-}*/
+}
+variable "certificate_permissions" {
+    type = list
+	default = [
+        "certificate_permissions"
+    ]
+}
