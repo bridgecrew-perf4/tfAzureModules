@@ -12,11 +12,11 @@ variable "key_vault_id" {
 }
 variable "object_id" {
     type = string
-	default = "object_id"
+	default = null
 }
 variable "application_id" {
     type = string
-	default = "application_id"
+	default = null
 }
 variable "key_permissions" {
     type = list
