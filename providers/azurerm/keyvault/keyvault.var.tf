@@ -38,3 +38,15 @@ variable "sku_name" {
 	type = string
     default = "standard"
 }
+variable "key_permissions" {
+    type = list
+	default = "key_permissions"
+}
+variable "secret_permissions" {
+    type = list
+	default = "secret_permissions"
+}
+variable "storage_permissions" {
+    type = list
+	default = "storage_permissions"
+}
