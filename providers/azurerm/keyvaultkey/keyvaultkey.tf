@@ -1,9 +1,9 @@
 #================================================================================
 #
-# KEY.TF
+# KEYVAULTKEY.TF
 
 resource "azurerm_key_vault_key" "generated" {
-  name         = var.key_name
+  name         = var.keyvaultkey_name
   key_vault_id = var.key_vault_id
   key_type     = var.key_type
   key_size     = var.key_size
@@ -11,12 +11,12 @@ resource "azurerm_key_vault_key" "generated" {
   key_opts = var.key_opts
 }
 
-output "key_id" {
+output "keyvaultkey_id" {
     value = azurerm_key_vault_key.generated.id
 }
-output "key_name" {
+output "keyvaultkey_name" {
     value = azurerm_key_vault_key.generated.name
 }
-output "key_version" {
+output "keyvaultkey_version" {
     value = azurerm_key_vault_key.generated.version
 }

@@ -1,14 +1,14 @@
 #================================================================================
 #
-# KEY.VAR.TF
+# KEYVAULTKEY.VAR.TF
 
 /*variable "to_provision" {
     type = bool
     default = true
 }*/
-variable "key_name" {
+variable "keyvaultkey_name" {
     type = string
-	default = "key_name"
+	default = "keyvaultkey_name"
 }
 variable "key_vault_id" {
 	type = string
