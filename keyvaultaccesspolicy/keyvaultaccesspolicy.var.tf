@@ -10,6 +10,14 @@ variable "key_vault_id" {
     type = string
 	default = "key_vault_id"
 }
+variable "object_id" {
+    type = string
+	default = data.azurerm_client_config.current.object_id
+}
+variable "application_id" {
+    type = string
+	default = "application_id"
+}
 variable "key_permissions" {
     type = list
 	default = [
