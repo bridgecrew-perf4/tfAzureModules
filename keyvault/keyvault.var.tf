@@ -38,27 +38,27 @@ variable "sku_name" {
 	type = string
     default = "standard"
 }
-variable "key_permissions" {
+variable "access_policy_key_permissions" {
     type = list
 	default = [
-        "key_permissions"
+        "access_policy_key_permissions"
     ]
 }
-variable "secret_permissions" {
+variable "access_policy_secret_permissions" {
     type = list
 	default = [
-        "secret_permissions"
+        "access_policy_secret_permissions"
     ]
 }
-variable "storage_permissions" {
+variable "access_policy_storage_permissions" {
     type = list
 	default = [
-        "storage_permissions"
+        "access_policy_storage_permissions"
     ]
 }
-variable "certificate_permissions" {
+variable "access_policy_certificate_permissions" {
     type = list
 	default = [
-        "certificate_permissions"
+        "access_policy_certificate_permissions"
     ]
 }
