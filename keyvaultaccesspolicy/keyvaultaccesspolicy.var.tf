@@ -12,7 +12,7 @@ variable "key_vault_id" {
 }
 variable "object_id" {
     type = string
-	default = data.azurerm_client_config.current.object_id
+	default = "object_id"
 }
 variable "application_id" {
     type = string
