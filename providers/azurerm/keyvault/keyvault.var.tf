@@ -40,13 +40,19 @@ variable "sku_name" {
 }
 variable "key_permissions" {
     type = list
-	default = "key_permissions"
+	default = [
+        "key_permissions"
+    ]
 }
 variable "secret_permissions" {
     type = list
-	default = "secret_permissions"
+	default = [
+        "secret_permissions"
+    ]
 }
 variable "storage_permissions" {
     type = list
-	default = "storage_permissions"
+	default = [
+        "storage_permissions"
+    ]
 }
