@@ -38,7 +38,7 @@ variable "sku_name" {
 	type = string
     default = "standard"
 }
-variable "access_policy_key_permissions" {
+/*variable "access_policy_key_permissions" {
     type = list
 	default = [
         "access_policy_key_permissions"
@@ -61,4 +61,4 @@ variable "access_policy_certificate_permissions" {
 	default = [
         "access_policy_certificate_permissions"
     ]
-}
+}*/
