@@ -22,3 +22,7 @@ variable "allocation_method" {
 	type = string
     default = "allocation_method"
 }
+variable "sku" {
+	type = string
+    default = "Basic"
+}
