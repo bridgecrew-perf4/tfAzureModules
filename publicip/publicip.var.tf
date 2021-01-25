@@ -26,3 +26,7 @@ variable "sku" {
 	type = string
     default = "Basic"
 }
+variable "domain_name_label" {
+	type = string
+	default = null
+}

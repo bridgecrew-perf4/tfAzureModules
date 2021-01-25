@@ -9,6 +9,7 @@ resource "azurerm_public_ip" "example" {
   location            = var.rg_location
   allocation_method   = var.allocation_method
   sku                 = var.sku
+  domain_name_label   = var.domain_name_label
 }
 
 output "publicip_id" {
@@ -19,4 +20,7 @@ output "publicip_ip_address" {
 }
 output "publicip_name" {
     value = azurerm_public_ip.example.name
+}
+output "publicip_domain_name_label" {
+    value = azurerm_public_ip.example.domain_name_label
 }
