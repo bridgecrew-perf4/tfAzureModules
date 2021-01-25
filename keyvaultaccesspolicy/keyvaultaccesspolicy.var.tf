@@ -21,24 +21,24 @@ variable "application_id" {
 variable "key_permissions" {
     type = list
 	default = [
-        "key_permissions"
+        "get"
     ]
 }
 variable "secret_permissions" {
     type = list
 	default = [
-        "secret_permissions"
+        "get"
     ]
 }
 variable "storage_permissions" {
     type = list
 	default = [
-        "storage_permissions"
+        "get"
     ]
 }
 variable "certificate_permissions" {
     type = list
 	default = [
-        "certificate_permissions"
+        "get"
     ]
 }
