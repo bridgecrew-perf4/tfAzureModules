@@ -23,7 +23,7 @@ output "netinf_name" {
     value = azurerm_network_interface.example.name
 }
 output "netinf_private_ip_address" {
-    value = azurerm_network_interface.example.ip_configuration_private_ip_address
+    value = azurerm_network_interface.example.private_ip_address
 }
 output "netinf_virtual_machine_id" {
     value = azurerm_network_interface.example.virtual_machine_id

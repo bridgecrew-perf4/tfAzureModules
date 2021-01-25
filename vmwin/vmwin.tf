@@ -12,9 +12,7 @@ resource "azurerm_windows_virtual_machine" "example" {
 
   computer_name         = var.computer_name
   license_type          = var.license_type
-  network_interface_ids = [
-    azurerm_network_interface.example.id,
-  ]
+  network_interface_ids = var.network_interface_ids
 
   os_disk {
     caching              = var.os_disk_caching
