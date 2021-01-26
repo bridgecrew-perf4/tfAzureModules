@@ -38,3 +38,7 @@ variable "ip_configuration_private_ip_address" {
     type = string
 	default = null
 }
+variable "ip_configuration_public_ip_address_id" {
+    type = string
+    default = null
+}
