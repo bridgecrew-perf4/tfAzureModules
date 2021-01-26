@@ -32,7 +32,7 @@ variable "security_rule_destination_address_prefix" {
 }
 variable "security_rule_destination_address_prefixes" {
     type = list
-	default = "security_rule_destination_address_prefixes"
+	default = []
 }
 variable "security_rule_destination_application_security_group_ids" {
     type = list
