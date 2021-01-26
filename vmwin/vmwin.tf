@@ -42,3 +42,6 @@ output "vmwin_private_ip_address" {
 output "vmwin_virtual_machine_id" {
   value = azurerm_windows_virtual_machine.example.virtual_machine_id
 }
+output "vmwin_public_ip_address" {
+  value = azurerm_windows_virtual_machine.example.public_ip_address
+}
