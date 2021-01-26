@@ -36,7 +36,7 @@ variable "security_rule_destination_address_prefixes" {
 }
 variable "security_rule_destination_application_security_group_ids" {
     type = list
-	default = "security_rule_destination_application_security_group_ids"
+	default = []
 }
 variable "security_rule_destination_port_range" {
     type = string
@@ -44,7 +44,7 @@ variable "security_rule_destination_port_range" {
 }
 variable "security_rule_destination_port_ranges" {
     type = list
-	default = "security_rule_destination_port_ranges"
+	default = []
 }
 variable "security_rule_direction" {
     type = string
@@ -68,11 +68,11 @@ variable "security_rule_source_address_prefix" {
 }
 variable "security_rule_source_address_prefixes" {
     type = list
-	default = "security_rule_source_address_prefixes"
+	default = []
 }
 variable "security_rule_source_application_security_group_ids" {
     type = list
-	default = "security_rule_source_application_security_group_ids"
+	default = []
 }
 variable "security_rule_source_port_range" {
     type = string
@@ -80,5 +80,5 @@ variable "security_rule_source_port_range" {
 }
 variable "security_rule_source_port_ranges" {
     type = list
-	default = "security_rule_source_port_ranges"
+	default = []
 }
