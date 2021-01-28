@@ -20,11 +20,11 @@ variable "network_security_group_name" {
 }
 variable "security_rule_access" {
     type = string
-	default = "security_rule_access"
+	default = null
 }
 variable "security_rule_description" {
     type = string
-	default = "security_rule_description"
+	default = null
 }
 variable "security_rule_destination_address_prefix" {
     type = string
@@ -32,11 +32,11 @@ variable "security_rule_destination_address_prefix" {
 }
 variable "security_rule_destination_address_prefixes" {
     type = list
-	default = []
+	default = null
 }
 variable "security_rule_destination_application_security_group_ids" {
     type = list
-	default = []
+	default = null
 }
 variable "security_rule_destination_port_range" {
     type = string
@@ -44,11 +44,11 @@ variable "security_rule_destination_port_range" {
 }
 variable "security_rule_destination_port_ranges" {
     type = list
-	default = []
+	default = null
 }
 variable "security_rule_direction" {
     type = string
-	default = "security_rule_direction"
+	default = null
 }
 variable "security_rule_priority" {
     type = number
@@ -56,25 +56,25 @@ variable "security_rule_priority" {
 }
 variable "security_rule_protocol" {
     type = string
-	default = "security_rule_protocol"
+	default = null
 }
 variable "security_rule_source_address_prefix" {
     type = string
-	default = "security_rule_source_address_prefix"
+	default = null
 }
 variable "security_rule_source_address_prefixes" {
     type = list
-	default = []
+	default = null
 }
 variable "security_rule_source_application_security_group_ids" {
     type = list
-	default = []
+	default = null
 }
 variable "security_rule_source_port_range" {
     type = string
-	default = "security_rule_source_port_range"
+	default = null
 }
 variable "security_rule_source_port_ranges" {
     type = list
-	default = []
+	default = null
 }
