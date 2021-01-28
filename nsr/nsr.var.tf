@@ -28,7 +28,7 @@ variable "security_rule_description" {
 }
 variable "security_rule_destination_address_prefix" {
     type = string
-	default = "security_rule_destination_address_prefix"
+	default = null
 }
 variable "security_rule_destination_address_prefixes" {
     type = list
@@ -40,7 +40,7 @@ variable "security_rule_destination_application_security_group_ids" {
 }
 variable "security_rule_destination_port_range" {
     type = string
-	default = "security_rule_destination_port_range"
+	default = null
 }
 variable "security_rule_destination_port_ranges" {
     type = list
