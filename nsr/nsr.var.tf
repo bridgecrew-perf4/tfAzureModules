@@ -14,6 +14,10 @@ variable "nsr_name" {
     type = string
 	default = "nsr_name"
 }
+variable "network_security_group_name" {
+    type = string
+    default = "network_security_group_name"
+}
 variable "security_rule_access" {
     type = string
 	default = "security_rule_access"

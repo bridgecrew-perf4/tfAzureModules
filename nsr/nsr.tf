@@ -3,8 +3,9 @@
 # NSR.TF
 
 resource "azurerm_network_security_rule" "example" {
-    name                = var.nsr_name
-    resource_group_name = var.rg_name
+    name                         = var.nsr_name
+    resource_group_name          = var.rg_name
+    network_security_group_name  = var.network_security_group_name
 
     # security_rule
     access                                     = var.security_rule_access
@@ -23,9 +24,6 @@ resource "azurerm_network_security_rule" "example" {
 	source_port_range                          = var.security_rule_source_port_range
     source_port_ranges                         = var.security_rule_source_port_ranges
 }
-
-
-
 
 output "nsr_id" {
     value = azurerm_network_security_rule.example.id
