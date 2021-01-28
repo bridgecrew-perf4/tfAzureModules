@@ -14,39 +14,63 @@ variable "nsr_name" {
     type = string
 	default = "nsr_name"
 }
-variable "priority" {
+variable "security_rule_access" {
+    type = string
+	default = "security_rule_access"
+}
+variable "security_rule_description" {
+    type = string
+	default = "security_rule_description"
+}
+variable "security_rule_destination_address_prefix" {
+    type = string
+	default = "security_rule_destination_address_prefix"
+}
+variable "security_rule_destination_address_prefixes" {
+    type = list
+	default = []
+}
+variable "security_rule_destination_application_security_group_ids" {
+    type = list
+	default = []
+}
+variable "security_rule_destination_port_range" {
+    type = string
+	default = "security_rule_destination_port_range"
+}
+variable "security_rule_destination_port_ranges" {
+    type = list
+	default = []
+}
+variable "security_rule_direction" {
+    type = string
+	default = "security_rule_direction"
+}
+variable "security_rule_priority" {
     type = number
-    default = null
+	default = 0
 }
-variable "direction" {
+variable "security_rule_protocol" {
     type = string
-    default = "direction"
+	default = "security_rule_protocol"
 }
-variable "access" {
+variable "security_rule_source_address_prefix" {
     type = string
-    default = "access"
+	default = "security_rule_source_address_prefix"
 }
-variable "protocol" {
-    type = string
-    default = "protocol"
+variable "security_rule_source_address_prefixes" {
+    type = list
+	default = []
 }
-variable "source_port_range" {
-    type = string
-    default = "source_port_range"
+variable "security_rule_source_application_security_group_ids" {
+    type = list
+	default = []
 }
-variable "destination_port_range" {
+variable "security_rule_source_port_range" {
     type = string
-    default = "destination_port_range"
+	default = "security_rule_source_port_range"
 }
-variable "source_address_prefix" {
-    type = string
-    default = "source_address_prefix"
-}
-variable "destination_address_prefix" {
-    type = string
-    default = "destination_address_prefix"
-}
-variable "network_security_group_name" {
-    type = string
-    default = "network_security_group_name"
+variable "security_rule_source_port_ranges" {
+    type = list
+	default = []
 }

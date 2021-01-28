@@ -18,7 +18,7 @@ variable "nsg_name" {
     type = string
 	default = "nsg_name"
 }
-variable "security_rule_access" {
+/*variable "security_rule_access" {
     type = string
 	default = "security_rule_access"
 }
@@ -81,4 +81,4 @@ variable "security_rule_source_port_range" {
 variable "security_rule_source_port_ranges" {
     type = list
 	default = []
-}
+}*/

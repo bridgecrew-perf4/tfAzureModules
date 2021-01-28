@@ -7,7 +7,7 @@ resource "azurerm_network_security_group" "example" {
     location            = var.rg_location
     resource_group_name = var.rg_name
 
-    security_rule {
+    /*security_rule {
         access                                     = var.security_rule_access
 	    description                                = var.security_rule_description
 	    destination_address_prefix                 = var.security_rule_destination_address_prefix
@@ -24,7 +24,7 @@ resource "azurerm_network_security_group" "example" {
 	    source_application_security_group_ids      = var.security_rule_source_application_security_group_ids
 	    source_port_range                          = var.security_rule_source_port_range
         source_port_ranges                         = var.security_rule_source_port_ranges
-    }
+    }*/
 }
 
 output "nsg_id" {
