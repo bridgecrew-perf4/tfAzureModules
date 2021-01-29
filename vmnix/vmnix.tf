@@ -11,7 +11,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   admin_password                  = var.admin_password
 
   computer_name                   = var.computer_name
-  disable_password_authentication = true
+  disable_password_authentication = false
   network_interface_ids           = var.network_interface_ids
 
   os_disk {
