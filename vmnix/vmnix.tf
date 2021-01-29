@@ -3,15 +3,16 @@
 # vmnix.TF
 
 resource "azurerm_linux_virtual_machine" "example" {
-  name                  = var.vmnix_name
-  resource_group_name   = var.rg_name
-  location              = var.rg_location
-  size                  = var.size
-  admin_username        = var.admin_username
-  admin_password        = var.admin_password
+  name                            = var.vmnix_name
+  resource_group_name             = var.rg_name
+  location                        = var.rg_location
+  size                            = var.size
+  admin_username                  = var.admin_username
+  admin_password                  = var.admin_password
 
-  computer_name         = var.computer_name
-  network_interface_ids = var.network_interface_ids
+  computer_name                   = var.computer_name
+  disable_password_authentication = true
+  network_interface_ids           = var.network_interface_ids
 
   os_disk {
     caching              = var.os_disk_caching
