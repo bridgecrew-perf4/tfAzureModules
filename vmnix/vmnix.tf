@@ -27,20 +27,20 @@ resource "azurerm_linux_virtual_machine" "example" {
 }
 
 output "vmnix_id" {
-  value = azurerm_windows_virtual_machine.example.id
+  value = azurerm_linux_virtual_machine.example.id
 }
 output "vmnix_name" {
-  value = azurerm_windows_virtual_machine.example.name
+  value = azurerm_linux_virtual_machine.example.name
 }
 output "vmnix_computer_name" {
-  value = azurerm_windows_virtual_machine.example.computer_name
+  value = azurerm_linux_virtual_machine.example.computer_name
 }
 output "vmnix_private_ip_address" {
-  value = azurerm_windows_virtual_machine.example.private_ip_address
+  value = azurerm_linux_virtual_machine.example.private_ip_address
 }
 output "vmnix_virtual_machine_id" {
-  value = azurerm_windows_virtual_machine.example.virtual_machine_id
+  value = azurerm_linux_virtual_machine.example.virtual_machine_id
 }
 output "vmnix_public_ip_address" {
-  value = azurerm_windows_virtual_machine.example.public_ip_address
+  value = azurerm_linux_virtual_machine.example.public_ip_address
 }
