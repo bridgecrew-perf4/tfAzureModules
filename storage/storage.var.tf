@@ -30,3 +30,7 @@ variable "enable_https_traffic_only" {
     type = bool
 	default = true
 }
+variable "allow_blob_public_access" {
+    type = bool
+	default = false
+}
