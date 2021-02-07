@@ -1,15 +1,15 @@
 resource "azurerm_app_service" "example" {
-  name                = "example-app-service"
-  location            = azurerm_resource_group.example.location
-  resource_group_name = azurerm_resource_group.example.name
-  appsvcplan_id = azurerm_app_service_plan.example.id
+  name                = var.appsvc_name
+  location            = var.rg_location
+  resource_group_name = var.rg_name
+  app_service_plan_id = var.site_config_appsvcplan_id
 
   site_config {
-    dotnet_framework_version = "v4.0"
-    remote_debugging_enabled = true
-    remote_debugging_version = "VS2019"
-    scm_type                 = "LocalGit"
-    linux_fx_version = "value"
+    dotnet_framework_version = var.dotnet_framework_version
+    remote_debugging_enabled = var.remote_debugging_enabled
+    remote_debugging_version = var.remote_debugging_version
+    scm_type                 = var.scm_type
+    linux_fx_version = var.linux_fx_version
   }
 
   app_settings = {

@@ -38,6 +38,9 @@ variable "site_config_scm_type" {
     type = string
     default = "LocalGit"
 }
+variable "site_config_linux_fx_version" {
+    type = string
+}
 variable "connection_string_name" {
     type = string
     default = null
