@@ -5,11 +5,11 @@ resource "azurerm_app_service" "example" {
   app_service_plan_id = var.site_config_appsvcplan_id
 
   site_config {
-    dotnet_framework_version = var.dotnet_framework_version
-    remote_debugging_enabled = var.remote_debugging_enabled
-    remote_debugging_version = var.remote_debugging_version
-    scm_type                 = var.scm_type
-    linux_fx_version = var.linux_fx_version
+    site_config_dotnet_framework_version = var.site_config_dotnet_framework_version
+    site_config_remote_debugging_enabled = var.site_config_remote_debugging_enabled
+    site_config_remote_debugging_version = var.site_config_remote_debugging_version
+    site_config_scm_type                 = var.site_config_scm_type
+    site_config_linux_fx_version = var.site_config_linux_fx_version
   }
 
   app_settings = {
@@ -17,9 +17,9 @@ resource "azurerm_app_service" "example" {
   }
 
   connection_string {
-    name  = "Database"
-    type  = "SQLServer"
-    value = "Server=some-server.mydomain.com;Integrated Security=SSPI"
+    connection_string_name  = var.connection_string_name
+    connection_string_type  = var.connection_string_type
+    connection_string_value = var.connection_string_value
   }
 }
 
