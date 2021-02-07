@@ -23,24 +23,24 @@ resource "azurerm_app_service" "example" {
   }
 }
 
-output "app_service_id" {
+output "appsvc_id" {
     value = azurerm_app_service.example.id
 }
-output "app_service_name" {
+output "appsvc_name" {
     value = azurerm_app_service.example.name
 }
-output "app_service_default_site_hostname" {
-  value = "https://${azurerm_app_service.main.default_site_hostname}"
+output "appsvc_default_site_hostname" {
+  value = "https://${azurerm_app_service.example.default_site_hostname}"
 }
-output "app_service_custom_domain_verification_id" {
+output "appsvc_custom_domain_verification_id" {
     value = azurerm_app_service.example.custom_domain_verification_id
 }
-output "app_service_source_control" {
+output "appsvc_source_control" {
     value = azurerm_app_service.example.source_control
 }
-output "app_service_site_credential" {
+output "appsvc_site_credential" {
     value = azurerm_app_service.example.site_credential
 }
-output "app_service_identity" {
+output "appsvc_identity" {
     value = azurerm_app_service.example.identity
 }

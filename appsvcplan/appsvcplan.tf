@@ -1,5 +1,5 @@
 resource "azurerm_app_service_plan" "example" {
-  name                = var.appsvc_name
+  name                = var.appsvcplan_name
   location            = var.rg_location
   resource_group_name = var.rg_name
   kind                = var.kind
