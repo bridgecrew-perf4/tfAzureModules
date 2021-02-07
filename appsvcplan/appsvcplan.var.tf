@@ -1,6 +1,6 @@
 #================================================================================
 #
-# STORAGE.VAR.TF
+# APPSVCPLAN.VAR.TF
 
 /*variable "to_provision" {
     type = bool

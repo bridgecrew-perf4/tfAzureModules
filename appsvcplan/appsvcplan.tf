@@ -13,15 +13,15 @@ resource "azurerm_app_service_plan" "example" {
   }
 }
 
-output "app_service_plan_id" {
+output "appsvcplan_id" {
     value = azurerm_app_service_plan.example.id
 }
-output "app_service_plan_name" {
+output "appsvcplan_name" {
     value = azurerm_app_service_plan.example.name
 }
-output "app_service_plan_kind" {
+output "appsvcplan_kind" {
     value = azurerm_app_service_plan.example.kind
 }
-output "app_service_plan_maximum_number_of_workers" {
+output "appsvcplan_maximum_number_of_workers" {
     value = azurerm_app_service_plan.example.maximum_number_of_workers
 }
