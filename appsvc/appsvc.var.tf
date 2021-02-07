@@ -38,10 +38,10 @@ variable "site_config_http2_enabled" {
     type = bool
     default = true
 }
-variable "site_config_ip_restriction" {
+/*variable "site_config_ip_restriction" {
     type = bool
     default = true
-}
+}*/
 variable "site_config_linux_fx_version" {
     type = string
     default = null

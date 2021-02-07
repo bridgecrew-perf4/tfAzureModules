@@ -9,7 +9,7 @@ resource "azurerm_app_service" "example" {
     dotnet_framework_version    = var.site_config_dotnet_framework_version
     ftps_state                  = var.site_config_ftps_state
     http2_enabled               = var.site_config_http2_enabled
-    ip_restriction              = var.site_config_ip_restriction
+    #ip_restriction              = var.site_config_ip_restriction
     linux_fx_version            = var.site_config_linux_fx_version
     local_mysql_enabled         = var.site_config_local_mysql_enabled
     managed_pipeline_mode       = var.site_config_managed_pipeline_mode
