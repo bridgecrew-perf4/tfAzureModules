@@ -2,7 +2,7 @@ resource "azurerm_app_service" "example" {
   name                = var.appsvc_name
   location            = var.rg_location
   resource_group_name = var.rg_name
-  app_service_plan_id = var.site_config_appsvcplan_id
+  app_service_plan_id = var.appsvcplan_id
 
   site_config {
     always_on                   = var.site_config_always_on
