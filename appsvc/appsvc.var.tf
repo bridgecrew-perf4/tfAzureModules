@@ -60,7 +60,7 @@ variable "site_config_min_tls_version" {
 }
 variable "site_config_number_of_workers" {
     type = number
-    #default = 
+    default = 1
 }
 variable "site_config_remote_debugging_enabled" {
     type = bool
