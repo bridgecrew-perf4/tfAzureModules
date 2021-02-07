@@ -59,8 +59,8 @@ variable "site_config_min_tls_version" {
     default = "1.2"
 }
 variable "site_config_number_of_workers" {
-    type = bool
-    default = true
+    type = number
+    #default = 
 }
 variable "site_config_remote_debugging_enabled" {
     type = bool
