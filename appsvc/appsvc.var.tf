@@ -31,8 +31,8 @@ variable "site_config_dotnet_framework_version" {
     default = null
 }
 variable "site_config_ftps_state" {
-    type = bool
-    default = true
+    type = string
+    default = "FtpsOnly"
 }
 variable "site_config_http2_enabled" {
     type = bool
