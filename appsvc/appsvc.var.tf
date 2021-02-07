@@ -52,7 +52,7 @@ variable "site_config_local_mysql_enabled" {
 }
 variable "site_config_managed_pipeline_mode" {
     type = string
-    default = Integrated
+    default = "Integrated"
 }
 variable "site_config_min_tls_version" {
     type = string
