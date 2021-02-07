@@ -7,9 +7,9 @@ resource "azurerm_app_service_plan" "example" {
   is_xenon            = var.is_xenon
 
   sku {
-    tier = var.skutier
-    size = var.skusize
-    capacity = var.skucapacity
+    tier = var.sku_tier
+    size = var.sku_size
+    capacity = var.sku_capacity
   }
 }
 

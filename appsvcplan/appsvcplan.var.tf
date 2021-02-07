@@ -30,15 +30,15 @@ variable "is_xenon" {
     type = bool
     default = false
 }
-variable "skutier" {
+variable "sku_tier" {
     type = string
     default = "Basic"
 }
-variable "skusize" {
+variable "sku_size" {
     type = string
     default = "B2"
 }
-variable "skucapacity" {
+variable "sku_capacity" {
     type = number
     default = 1
 }
