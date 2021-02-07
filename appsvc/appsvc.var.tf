@@ -18,13 +18,49 @@ variable "rg_name" {
     type = string
     default = "appsvc_name"
 }
-variable "site_config_appsvcplan_id" {
+variable "appsvcplan_id" {
     type = string
     default = "appsvcplan_id"
+}
+variable "site_config_always_on" {
+    type = bool
+    default = "false"
 }
 variable "site_config_dotnet_framework_version" {
     type = string
     default = null
+}
+variable "site_config_ftps_state" {
+    type = bool
+    default = true
+}
+variable "site_config_http2_enabled" {
+    type = bool
+    default = true
+}
+variable "site_config_ip_restriction" {
+    type = bool
+    default = true
+}
+variable "site_config_linux_fx_version" {
+    type = string
+    default = null
+}
+variable "site_config_local_mysql_enabled" {
+    type = bool
+    default = false
+}
+variable "site_config_managed_pipeline_mode" {
+    type = string
+    #default = null
+}
+variable "site_config_min_tls_version" {
+    type = bool
+    default = true
+}
+variable "site_config_number_of_workers" {
+    type = bool
+    default = true
 }
 variable "site_config_remote_debugging_enabled" {
     type = bool
@@ -34,12 +70,21 @@ variable "site_config_remote_debugging_version" {
     type = string
     default = null
 }
+variable "site_config_scm_ip_restriction" {
+    type = string
+    default = "LocalGit"
+}
 variable "site_config_scm_type" {
     type = string
     default = "LocalGit"
 }
-variable "site_config_linux_fx_version" {
-    type = string
+variable "site_config_scm_use_main_ip_restriction" {
+    type = bool
+    default = false
+}
+variable "site_config_websockets_enabled" {
+    type = bool
+    default = false
 }
 variable "connection_string_name" {
     type = string
