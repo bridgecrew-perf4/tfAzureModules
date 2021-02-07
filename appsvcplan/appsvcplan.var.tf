@@ -14,9 +14,9 @@ variable "rg_name" {
     type = string
 	default = "rg_name"
 }
-    variable "name" {
+    variable "appsvcplan_name" {
     type = string
-    default = "name"
+    default = "appsvcplan_name"
 }
 variable "kind" {
     type = string
