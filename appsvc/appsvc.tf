@@ -17,9 +17,9 @@ resource "azurerm_app_service" "example" {
     number_of_workers           = var.site_config_number_of_workers
     remote_debugging_enabled    = var.site_config_remote_debugging_enabled
     remote_debugging_version    = var.site_config_remote_debugging_version
-    scm_ip_restriction          = var.site_config_scm_ip_restriction
+    #scm_ip_restriction          = var.site_config_scm_ip_restriction
     scm_type                    = var.site_config_scm_type
-    scm_use_main_ip_restriction = var.site_config_scm_use_main_ip_restriction
+    #scm_use_main_ip_restriction = var.site_config_scm_use_main_ip_restriction
     websockets_enabled          = var.site_config_websockets_enabled
   }
 

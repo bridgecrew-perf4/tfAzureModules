@@ -70,18 +70,18 @@ variable "site_config_remote_debugging_version" {
     type = string
     default = null
 }
-variable "site_config_scm_ip_restriction" {
+/*variable "site_config_scm_ip_restriction" {
     type = string
     default = "LocalGit"
-}
+}*/
 variable "site_config_scm_type" {
     type = string
     default = "LocalGit"
 }
-variable "site_config_scm_use_main_ip_restriction" {
+/*variable "site_config_scm_use_main_ip_restriction" {
     type = bool
     default = false
-}
+}*/
 variable "site_config_websockets_enabled" {
     type = bool
     default = false
