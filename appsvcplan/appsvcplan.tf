@@ -9,7 +9,7 @@ resource "azurerm_app_service_plan" "example" {
   sku {
     tier = var.sku_tier
     size = var.sku_size
-    capacity = var.sku_capacity
+    #capacity = var.sku_capacity
   }
 }
 

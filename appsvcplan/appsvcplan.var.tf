@@ -38,7 +38,7 @@ variable "sku_size" {
     type = string
     default = "B2"
 }
-variable "sku_capacity" {
+/*variable "sku_capacity" {
     type = number
     default = 1
-}
+}*/
