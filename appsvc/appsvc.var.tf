@@ -46,6 +46,10 @@ variable "site_config_linux_fx_version" {
     type = string
     default = null
 }
+variable "site_config_windows_fx_version" {
+    type = string
+    default = null
+}
 variable "site_config_local_mysql_enabled" {
     type = bool
     default = false
