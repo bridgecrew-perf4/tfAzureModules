@@ -16,7 +16,7 @@ variable "rg_name" {
 }
 variable "lb_name" {
     type = string
-	default = "publicip_name"
+	default = "lb_name"
 }
 variable "frontend_ip_configuration_name" {
     type = string
