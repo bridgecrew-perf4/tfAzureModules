@@ -2,6 +2,7 @@ resource "azurerm_lb" "example" {
   name                = var.lb_name
   location            = var.rg_location
   resource_group_name = var.rg_name
+  sku                 = var.lb_sku
 
   frontend_ip_configuration {
     name                 = var.frontend_ip_configuration_name

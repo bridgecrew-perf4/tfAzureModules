@@ -18,6 +18,10 @@ variable "lb_name" {
     type = string
 	default = "lb_name"
 }
+variable "lb_sku" {
+    type = string
+	default = "Basic"
+}
 variable "frontend_ip_configuration_name" {
     type = string
     default = "frontend_ip_configuration_name"
