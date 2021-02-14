@@ -10,9 +10,9 @@ variable "lbprobe_name" {
 	type = string
 	default = "lbprobe_name"
 }
-variable "lbprobe_id" {
+variable "lbprobe_lb_id" {
 	type = string
-	default = "lbprobe_id"
+	default = "lbprobe_lb_id"
 }
 variable "lbprobe_protocol" {
 	type = string
