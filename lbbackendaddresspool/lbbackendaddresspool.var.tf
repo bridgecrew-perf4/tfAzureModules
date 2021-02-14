@@ -2,11 +2,11 @@
 #
 # LBBACKENDADDRESSPOOL.VAR.TF
 
-variable "lb_backend_address_pool_name" {
+variable "lbbackendaddresspool_name" {
 	type = string
-	default = "lb_backend_address_pool_name"
+	default = "lbbackendaddresspool_name"
 }
-variable "lb_backend_address_pool_loadbalancer_id" {
+variable "lbbackendaddresspool_lb_id" {
 	type = string
-	default = "lb_backend_address_pool_loadbalancer_id"
+	default = "lbbackendaddresspool_lb_id"
 }
