@@ -3,8 +3,8 @@
 # LBBACKENDADDRESSPOOL.TF
 
 resource "azurerm_lb_backend_address_pool" "example" {
-  loadbalancer_id = azurerm_lb.example.id
-  name            = "BackEndAddressPool"
+  loadbalancer_id = var.lb_backend_address_pool_loadbalancer_id
+  name            = var.lb_backend_address_pool_name
 }
 
 output "azurerm_lb_backend_address_pool_id" {

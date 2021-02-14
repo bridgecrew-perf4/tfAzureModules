@@ -3,10 +3,10 @@
 # LBBACKENDADDRESSPOOLADDRESS.TF
 
 resource "azurerm_lb_backend_address_pool_address" "example" {
-  name                    = "example"
-  backend_address_pool_id = data.azurerm_lb_backend_address_pool.example.id
-  virtual_network_id      = data.azurerm_virtual_network.example.id
-  ip_address              = "10.0.200.40"
+  name                    = var.lb_backendaddresspooladdress_name
+  backend_address_pool_id = var.lb_backendaddresspooladdress_backend_address_pool_id
+  virtual_network_id      = var.lb_backendaddresspooladdress_virtual_network_id
+  ip_address              = var.lb_backendaddresspooladdress_ip_address
 }
 
 output "azurerm_lb_backend_address_pool_address_id" {
