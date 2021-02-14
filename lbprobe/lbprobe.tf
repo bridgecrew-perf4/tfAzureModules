@@ -3,7 +3,7 @@
 # LBPROBE.TF
 
 resource "azurerm_lb_probe" "example" {
-  resource_group_name = azurerm_resource_group.example.name
+  resource_group_name = var.rg_name
   loadbalancer_id     = var.lbprobe_id
   name                = var.lbprobe_name
   protocol            = var.lbprobe_protocol
