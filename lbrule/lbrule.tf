@@ -3,13 +3,13 @@
 # LBRULE.TF
 
 resource "azurerm_lb_rule" "example" {
-  resource_group_name            = azurerm_resource_group.example.name
-  loadbalancer_id                = azurerm_lb.example.id
-  name                           = "LBRule"
-  protocol                       = "Tcp"
-  frontend_port                  = 3389
-  backend_port                   = 3389
-  frontend_ip_configuration_name = "PublicIPAddress"
+  resource_group_name            = var.rg_name
+  loadbalancer_id                = var.lb_id
+  name                           = var.lbrule_name
+  protocol                       = var.lbrule_protocol
+  frontend_port                  = var.lbrule_frontend_port
+  backend_port                   = var.lbrule_backend_port
+  frontend_ip_configuration_name = var.lbrule_frontend_ip_configuration_name
 }
 
 output "lbrule_id" {
