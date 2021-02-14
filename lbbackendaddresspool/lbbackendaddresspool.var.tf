@@ -1,11 +1,7 @@
-
+#================================================================================
 #
 # LBBACKENDADDRESSPOOL.VAR.TF
 
-/*variable "to_provision" {
-    type = bool
-    default = true
-}*/
 variable "lb_backend_address_pool_name" {
 	type = string
 	default = "lb_backend_address_pool_name"
