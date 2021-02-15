@@ -28,5 +28,5 @@ variable "lbprobe_request_path" {
 }
 variable "lbprobe_interval_in_seconds" {
 	type = number
-	default = 2
+	default = 5
 }
