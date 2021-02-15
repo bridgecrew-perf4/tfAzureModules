@@ -13,8 +13,8 @@ resource "azurerm_lb_rule" "example" {
 }
 
 output "lbrule_id" {
-  value = azurem_lb_rule.example.id
+  value = azurerm_lb_rule.example.id
 }
 output "lbrule_name" {
-  value = azurem_lb_rule.example.name
+  value = azurerm_lb_rule.example.name
 }
