@@ -20,6 +20,6 @@ output "lbbackendaddresspool_backend_ip_configurations" {
 output "lbbackendaddresspool_load_balancing_rules" {
     value = azurerm_lb_backend_address_pool.example.load_balancing_rules
 }
-output "lbbackendaddresspool_outbound_rules" {
+/*output "lbbackendaddresspool_outbound_rules" {
     value = azurerm_lb_backend_address_pool.example.outbound_rules
-}
+}*/
