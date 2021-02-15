@@ -10,6 +10,8 @@ resource "azurerm_lb_rule" "example" {
   frontend_port                  = var.lbrule_frontend_port
   backend_port                   = var.lbrule_backend_port
   frontend_ip_configuration_name = var.lbrule_frontend_ip_configuration_name
+  backend_address_pool_id        = var.lbrule_backend_address_pool_id
+  probe_id                       = var.lbrule_probe_id
 }
 
 output "lbrule_id" {

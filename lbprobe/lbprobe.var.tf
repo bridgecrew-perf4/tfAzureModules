@@ -20,7 +20,7 @@ variable "lbprobe_protocol" {
 }
 variable "lbprobe_port" {
 	type = number
-	default = 15
+	default = 443
 }
 variable "lbprobe_request_path" {
 	type = string
