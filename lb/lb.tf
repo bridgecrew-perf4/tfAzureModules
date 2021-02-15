@@ -5,8 +5,12 @@ resource "azurerm_lb" "example" {
   sku                 = var.lb_sku
 
   frontend_ip_configuration {
-    name                 = var.lb_frontend_ip_configuration_name
-    public_ip_address_id = var.lb_frontend_ip_configuration_public_ip_address_id
+    name                          = var.lb_frontend_ip_configuration_name
+    subnet_id                     = var.lb_frontend_ip_configuration_subnet_id
+    private_ip_address            = var.lb_frontend_ip_configuration_private_ip_address
+    private_ip_address_allocation = var.lb_frontend_ip_configuration_private_ip_address_allocation
+    private_ip_address_version    = var.lb_frontend_ip_configuration_private_ip_address_version
+    public_ip_address_id          = var.lb_frontend_ip_configuration_public_ip_address_id
   }
 }
 
