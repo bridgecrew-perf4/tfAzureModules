@@ -22,11 +22,11 @@ variable "lb_sku" {
     type = string
 	default = "Basic"
 }
-variable "frontend_ip_configuration_name" {
+variable "lb_frontend_ip_configuration_name" {
     type = string
-    default = "frontend_ip_configuration_name"
+    default = "lb_frontend_ip_configuration_name"
 }
-variable "frontend_ip_configuration_public_ip_address_id" {
+variable "lb_frontend_ip_configuration_public_ip_address_id" {
     type = string
-    default = "frontend_ip_configuration_public_ip_address_id"
+    default = "lb_frontend_ip_configuration_public_ip_address_id"
 }

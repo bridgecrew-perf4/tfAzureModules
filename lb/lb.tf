@@ -5,8 +5,8 @@ resource "azurerm_lb" "example" {
   sku                 = var.lb_sku
 
   frontend_ip_configuration {
-    name                 = var.frontend_ip_configuration_name
-    public_ip_address_id = var.frontend_ip_configuration_public_ip_address_id
+    name                 = var.lb_frontend_ip_configuration_name
+    public_ip_address_id = var.lb_frontend_ip_configuration_public_ip_address_id
   }
 }
 
@@ -15,6 +15,9 @@ output "lb_id" {
 }
 output "lb_name" {
     value = azurerm_lb.example.name
+}
+output "lb_frontend_ip_configuration_name" {
+    value = azurerm_lb.example.frontend_ip_configuration_name
 }
 output "lb_frontend_ip_configuration" {
     value = azurerm_lb.example.frontend_ip_configuration
