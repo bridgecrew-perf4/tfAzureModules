@@ -17,7 +17,7 @@ output "lb_name" {
     value = azurerm_lb.example.name
 }
 output "lb_frontend_ip_configuration_name" {
-    value = azurerm_lb.example.lb_frontend_ip_configuration_name
+    value = var.lb_frontend_ip_configuration_name
 }
 output "lb_frontend_ip_configuration" {
     value = azurerm_lb.example.frontend_ip_configuration
