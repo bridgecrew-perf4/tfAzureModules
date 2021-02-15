@@ -1,6 +1,6 @@
 #================================================================================
 #
-# LBRULEE.VAR.TF
+# LBRULE.VAR.TF
 
 variable "rg_name" {
     type = string
