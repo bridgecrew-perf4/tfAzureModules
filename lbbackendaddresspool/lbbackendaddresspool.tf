@@ -3,7 +3,7 @@
 # LBBACKENDADDRESSPOOL.TF
 
 resource "azurerm_lb_backend_address_pool" "example" {
-  lb_id = var.lbbackendaddresspool_lb_id
+  loadbalancer_id = var.lbbackendaddresspool_lb_id
   name  = var.lbbackendaddresspool_name
 }
 

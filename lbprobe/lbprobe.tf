@@ -4,7 +4,7 @@
 
 resource "azurerm_lb_probe" "example" {
   resource_group_name = var.rg_name
-  loadbalancer_id     = var.lbprobe_id
+  loadbalancer_id     = var.lbprobe_lb_id
   name                = var.lbprobe_name
   protocol            = var.lbprobe_protocol
   port                = var.lbprobe_port
