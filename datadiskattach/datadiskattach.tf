@@ -14,6 +14,3 @@ resource "azurerm_virtual_machine_data_disk_attachment" "example" {
 output "datadiskattach_id" {
     value = azurerm_virtual_machine_data_disk_attachment.example.id
 }
-output "datadiskattach_name" {
-    value = azurerm_virtual_machine_data_disk_attachment.example.name
-}
