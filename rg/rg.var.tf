@@ -15,5 +15,14 @@ variable "rg_location" {
     default = "rg_location"
 }
 variable "rg_tags" {
-    type = string
+    type = map
+    default = {
+		"ManagementGroup" = "A&E 700 R&D",
+		"Environment" = "Demo",
+		"AutomatedBy" = "Terraform",
+		"Note1" = "Do not manually change",
+		"POCName" = "ronc@mindpointgroup.com",
+		"POCPhone" = "843.330.6769",
+		"Project" = "Zero Trust Demo"
+    }
 }
