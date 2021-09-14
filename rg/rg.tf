@@ -15,3 +15,6 @@ output "rg_name" {
 output "rg_location" {
 	value = azurerm_resource_group.example.location
 }
+output "rg_tags" {
+	value = azurerm_resource_group.example.tags
+}
