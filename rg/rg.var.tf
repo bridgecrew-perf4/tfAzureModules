@@ -15,5 +15,5 @@ variable "rg_location" {
     default = "rg_location"
 }
 variable "rg_tags" {
-    type = list
+    type = string
 }
