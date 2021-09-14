@@ -17,7 +17,4 @@ variable "rg_location" {
 
 variable "rg_tags" {
     type = list
-    default = [
-        "rg_tags"
-    ]
 }
