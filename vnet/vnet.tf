@@ -7,8 +7,10 @@ resource "azurerm_virtual_network" "example" {
   name                = var.vnet_name
   location            = var.rg_location
   resource_group_name = var.rg_name
-  address_space       = var.address_space
-  dns_servers         = var.dns_servers
+	tags                = var.rg_tags
+  address_space       = var.vnet_address_space
+  dns_servers         = var.vnet_dns_servers
+
 }
 
 output "vnet_id" {

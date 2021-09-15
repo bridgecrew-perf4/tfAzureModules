@@ -14,17 +14,20 @@ variable "rg_name" {
 	type = string
 	default = "rg_name"
 }
+variable "rg_tags" {
+    type = map
+}
 variable "vnet_name" {
     type = string
 	default = "vnet_name"
 }
-variable "address_space" {
+variable "vnet_address_space" {
 	type = list
 	default = [
 		"10.0.0.0/8"
 	]
 }
-variable "dns_servers" {
+variable "vnet_dns_servers" {
 	type = list
 	default = [
 		"10.0.0.11",

@@ -6,6 +6,7 @@ resource "azurerm_subnet" "example" {
   #count = var.to_provision == true ? 1 : 0
   name                 = var.subnet_name
   resource_group_name  = var.rg_name
+  tags                 = var.rg_tags
   virtual_network_name = var.vnet_name
   address_prefixes     = var.subnet_prefixes
 }

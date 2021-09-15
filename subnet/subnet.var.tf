@@ -10,6 +10,9 @@ variable "rg_name" {
 	type = string
 	default = "rg_name"
 }
+variable "rg_tags" {
+    type = map
+}
 variable "subnet_name" {
 	type = string
     default = "subnet_name"
