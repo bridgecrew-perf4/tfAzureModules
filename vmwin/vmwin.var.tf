@@ -14,6 +14,9 @@ variable "rg_name" {
     type = string
 	default = "rg_name"
 }
+variable "rg_tags" {
+    type = map
+}
 variable "vmwin_name" {
     type = string
 	default = null
