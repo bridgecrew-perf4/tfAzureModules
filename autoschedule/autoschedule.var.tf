@@ -23,7 +23,7 @@ variable "autoschedule_frequency" {
 	default = "autoschedule_frequency"
 }
 variable "autoschedule_interval" {
-    type = integer
+    type = number
     default = 1
 }
 variable "autoschedule_timezone" {
