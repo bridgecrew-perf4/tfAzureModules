@@ -20,6 +20,6 @@ resource "azurerm_automation_schedule" "example" {
 output "autoschedule_id" {
     value = azurerm_automation_schedule.example.id
 }
-output "autojobschedule_name" {
+output "autoschedule_name" {
     value = azurerm_automation_schedule.example.name
 }
