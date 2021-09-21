@@ -6,6 +6,7 @@ resource "azurerm_linux_virtual_machine" "example" {
   name                            = var.vmnix_name
   resource_group_name             = var.rg_name
   location                        = var.rg_location
+	tags                            = var.rg_tags
   size                            = var.size
   admin_username                  = var.admin_username
   admin_password                  = var.admin_password

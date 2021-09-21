@@ -14,6 +14,9 @@ variable "rg_name" {
     type = string
 	default = "rg_name"
 }
+variable "rg_tags" {
+    type = map
+}
 variable "vmnix_name" {
     type = string
 	default = null
