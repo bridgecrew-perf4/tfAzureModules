@@ -36,7 +36,7 @@ variable "autoschedule_start_time" {
 }
 variable "autoschedule_expiry_time" {
     type = string
-	default = "autoschedule_expiry_time"
+	default = null
 }
 variable "autoschedule_description" {
     type = string
