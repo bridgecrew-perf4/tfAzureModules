@@ -14,7 +14,7 @@ resource "azurerm_automation_schedule" "example" {
     description             = var.autoschedule_description
     week_days               = var.autoschedule_week_days
     month_days              = var.autoschedule_month_days
-    monthly_occurrence      = var.autoschedule_monthly_occurrence
+    #monthly_occurrence      = var.autoschedule_monthly_occurrence
 }
 
 output "autoschedule_id" {

@@ -48,6 +48,6 @@ variable "autoschedule_week_days" {
 variable "autoschedule_month_days" {
     type = list
 }
-variable "autoschedule_monthly_occurrence" {
+/*variable "autoschedule_monthly_occurrence" {
     type = list
-}
+}*/
