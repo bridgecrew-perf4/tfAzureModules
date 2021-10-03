@@ -22,3 +22,15 @@ variable "to_vnet_id" {
     type = string
     default = "to_vnet_id"
 }
+variable "peer_allow_virtual_network_access" {
+    type = bool
+    default = true
+}
+variable "peer_allow_forwarded_traffic" {
+    type = bool
+    default = false
+}
+variable "peer_allow_gateway_transit" {
+    type = bool
+    default = false
+}
