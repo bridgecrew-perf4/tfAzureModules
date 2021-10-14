@@ -6,6 +6,7 @@ resource "azurerm_network_interface" "example" {
   name                = var.netinf_name
   resource_group_name = var.rg_name
   location            = var.rg_location
+	tags                = var.rg_tags
 
   ip_configuration {
     name                          = var.ip_configuration_name
