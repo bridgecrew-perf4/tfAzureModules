@@ -25,6 +25,10 @@ variable "account_tier" {
     type = string
 	default = "account_tier"
 }
+variable "access_tier" {
+    type = string
+	default = "hot"
+}
 variable "account_replication_type" {
     type = string
 	default = "account_replication_type"
