@@ -69,7 +69,10 @@ variable "vnetgw_vpn_client_configuration_vpn_client_protocols" {
         "vpn_client_protocols"
     ]
 
-variable "vnetgw_root_certificate_name"{}
+variable "vnetgw_root_certificate_name"{
+    type = string
+    default = "vnetgw_root_certificate_name"
+}
 variable "vnetgw_root_certificate_public_cert_data"{}
 variable "vnetgw_bgp_settings_asn"{}
 variable "vnetgw_bgp_settings_peering_addresses"{}
