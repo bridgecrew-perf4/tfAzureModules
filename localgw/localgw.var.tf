@@ -14,6 +14,9 @@ variable "rg_name" {
     type = string
 	default = "rg_name"
 }
+variable "rg_tags" {
+    type = map
+}
 variable "localgw_name" {
     type = string
 	default = "localgw_name"
