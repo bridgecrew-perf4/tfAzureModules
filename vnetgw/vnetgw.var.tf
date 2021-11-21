@@ -71,8 +71,8 @@ variable "vnetgw_vpn_client_configuration_vpn_client_protocols" {
 
 variable "vnetgw_root_certificate_name"{}
 variable "vnetgw_root_certificate_public_cert_data"{}
-variable "bgp_settings_asn"{}
-variable "bgp_settings_peering_addresses"{}
-variable "bgp_settings_peer_weight"{}
+variable "vnetgw_bgp_settings_asn"{}
+variable "vnetgw_bgp_settings_peering_addresses"{}
+variable "vnetgw_bgp_settings_peer_weight"{}
 
 }

@@ -32,9 +32,9 @@ resource "azurerm_virtual_network_gateway" "example" {
   }
   
   bgp_settings {
-    vnetgw_bgp_settings_asn                              = var.bgp_settings_asn
-    vnetgw_bgp_settings_peering_addresses                = var.bgp_settings_peering_addresses
-    vnetgw_bgp_settings_peer_weight                      = var.bgp_settings_peer_weight
+    vnetgw_bgp_settings_asn                              = var.vnetgw_bgp_settings_asn
+    vnetgw_bgp_settings_peering_addresses                = var.vnetgw_bgp_settings_peering_addresses
+    vnetgw_bgp_settings_peer_weight                      = var.vnetgw_bgp_settings_peer_weight
   }
 }
 
