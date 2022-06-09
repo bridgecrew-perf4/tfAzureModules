@@ -13,7 +13,7 @@ resource "azurerm_log_analytics_workspace" "example" {
   daily_quota_gb                    = var.loganalyticswrkspc_daily_quota_gb
   internet_ingestion_enabled        = var.loganalyticswrkspc_internet_ingestion_enabled
   internet_query_enabled            = var.loganalyticswrkspc_internet_query_enabled
-  reservation_capcity_in_gb_per_day = var.loganalyticswrkspc_reservation_capcity_in_gb_per_day
+  reservation_capacity_in_gb_per_day = var.loganalyticswrkspc_reservation_capacity_in_gb_per_day
 }
 
 output "loganalyticswrkspc_id" {

@@ -41,7 +41,7 @@ variable "loganalyticswrkspc_internet_query_enabled" {
 	type = bool
 	default = true
 }
-variable "loganalyticswrkspc_reservation_capcity_in_gb_per_day" {
+variable "loganalyticswrkspc_reservation_capacity_in_gb_per_day" {
 	type = number
 	default = null
 }
