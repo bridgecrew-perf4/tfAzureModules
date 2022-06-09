@@ -2,6 +2,7 @@
 #
 # LOGANALYTICSWRKSPC.TF
 
+
 resource "azurerm_log_analytics_workspace" "example" {
   #count = var.to_provision == true ? 1 : 0
   location                          = var.rg_location
